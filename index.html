@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighFPS Clock</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+            font-size: 5vw;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        #container {
+            text-align: center;
+            width: 100%;
+        }
+        #current-time-container {
+            width: 100%;
+            text-align: center;
+            font-family: Consolas,monospace;
+            font-size: 13vw;
+        }
+        #fps-container {
+            font-size: 4vw;
+            color: #0aa;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="current-time-container"><span id="current-time" class="value">00:00:00.000</span></div>
+        <div id="fps-container"><span id="fps" class="value">0</span>&thinsp;fps</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
